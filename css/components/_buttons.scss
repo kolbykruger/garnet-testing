@@ -94,7 +94,7 @@ $button-background: $color-1;
         font-weight: 500;
         border-radius: 0.85em;
         padding: 1.25em 1.75em;
-        min-width: 100%;
+        min-width: auto;
 
         &:hover,
         &:focus {
@@ -119,6 +119,11 @@ $button-background: $color-1;
         &:focus {
             background: lighten($color-3, 6%);
         }
+    }
+
+    &-size-small {
+        font-size: 0.875rem;
+        padding: 1em 1.5em;
     }
 
     &[disabled] {

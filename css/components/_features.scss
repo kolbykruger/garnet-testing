@@ -1,45 +1,69 @@
 .features {
+    margin: 6em auto;
 
     .container {
 
     }
 
     .group {
-        margin: 0 -2em;
+
 
         @media (max-width: 768px) {
             margin: 0;
         }
     }
 
+    .text {
+        flex: 1;
+        padding: 1em;
+
+        h2 {
+            @include fluid('font-size', 2.5rem, 4rem);
+            margin: 0.5em 0;
+        }
+
+        .description {
+            max-width: 500px;
+            opacity: 0.8;
+        }
+
+        .buttons {
+            margin-top: 2em;
+        }
+    }
+
+    .items {
+        flex: 1;
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 3.5em;
+    }
+
     .item {
+        position: relative;
         text-decoration: none;
         display: block;
         color: inherit;
         position: relative;
-        margin: 1em;
-        width: calc(33.333% - 2em);
-        background: #fff;
+        margin: 2em 1em;
+        width: calc(50% - 2em);
         border-radius: 0.25em;
         transition: $transition-1;
-        overflow: hidden;
 
-        .info {
-            width: 100%;
-            padding: 1em;
+        .icon {
+            position: relative;
+            font-size: 2rem;
+            margin-bottom: 0.5em;
         }
 
         .title {
-
+            font-weight: 300;
         }
 
         .description {
-
-        }
-
-        &:hover,
-        &:focus {
-            box-shadow: $box-shadow-2;
+            opacity: 0.4;
+            font-size: 1rem;
+            display: none;
         }
     }
 

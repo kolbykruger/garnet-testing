@@ -571,7 +571,7 @@ p {
   font-size: 16px;
   font-size: 1rem;
   margin: 0 0 1em;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.6;
 }
 p {
@@ -579,12 +579,12 @@ p {
 }
 @media screen and (min-width: 38rem) {
   p {
-    font-size: calc(1rem + 0.125 * ((100vw - 38rem) / 32));
+    font-size: calc(1rem + 0.25 * ((100vw - 38rem) / 32));
   }
 }
 @media screen and (min-width: 70rem) {
   p {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -598,7 +598,7 @@ a {
 
 h1 {
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 600;
 }
 h1 {
   font-size: 2.5rem;
@@ -672,13 +672,13 @@ ul {
 @media screen and (min-width: 38rem) {
   ol,
 ul {
-    font-size: calc(1rem + 0.125 * ((100vw - 38rem) / 32));
+    font-size: calc(1rem + 0.25 * ((100vw - 38rem) / 32));
   }
 }
 @media screen and (min-width: 70rem) {
   ol,
 ul {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -768,7 +768,7 @@ section {
 
 .eyebrow {
   letter-spacing: 0.125em;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   display: block;
   font-size: 1rem;
@@ -1402,7 +1402,7 @@ body.menu-open .mobile_nav {
   font-weight: 500;
   border-radius: 0.85em;
   padding: 1.25em 1.75em;
-  min-width: 100%;
+  min-width: auto;
 }
 .button-ghost:hover, .button-ghost:focus {
   background: #173d6e;
@@ -1421,6 +1421,10 @@ body.menu-open .mobile_nav {
 }
 .button-tertiary:hover, .button-tertiary:focus {
   background: #009f00;
+}
+.button-size-small {
+  font-size: 0.875rem;
+  padding: 1em 1.5em;
 }
 .button[disabled] {
   background: #f6f9fc;
@@ -1537,15 +1541,14 @@ body.menu-open .mobile_nav {
 .impression .image {
   position: relative;
   flex: 1;
-  padding: 1em;
 }
 .impression .image::before {
   content: "";
   position: absolute;
-  top: 3em;
-  left: 3em;
-  right: -1em;
-  bottom: -1em;
+  top: 2.5em;
+  left: 2.5em;
+  width: 100%;
+  height: 100%;
   background: #fff;
   z-index: -1;
   box-shadow: rgba(27, 31, 35, 0.07) 0px 10px 50px 0px;
@@ -2142,32 +2145,70 @@ p.simplesearch-results,
 .carousel .slide .button {
   margin: 0.5em 0;
 }
-.features .group {
-  margin: 0 -2em;
+.features {
+  margin: 6em auto;
 }
 @media (max-width: 768px) {
   .features .group {
     margin: 0;
   }
 }
+.features .text {
+  flex: 1;
+  padding: 1em;
+}
+.features .text h2 {
+  margin: 0.5em 0;
+}
+.features .text h2 {
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 38rem) {
+  .features .text h2 {
+    font-size: calc(2.5rem + 1.5 * ((100vw - 38rem) / 32));
+  }
+}
+@media screen and (min-width: 70rem) {
+  .features .text h2 {
+    font-size: 4rem;
+  }
+}
+.features .text .description {
+  max-width: 500px;
+  opacity: 0.8;
+}
+.features .text .buttons {
+  margin-top: 2em;
+}
+.features .items {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 3.5em;
+}
 .features .item {
+  position: relative;
   text-decoration: none;
   display: block;
   color: inherit;
   position: relative;
-  margin: 1em;
-  width: calc(33.333% - 2em);
-  background: #fff;
+  margin: 2em 1em;
+  width: calc(50% - 2em);
   border-radius: 0.25em;
   transition: 250ms ease;
-  overflow: hidden;
 }
-.features .item .info {
-  width: 100%;
-  padding: 1em;
+.features .item .icon {
+  position: relative;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
 }
-.features .item:hover, .features .item:focus {
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+.features .item .title {
+  font-weight: 300;
+}
+.features .item .description {
+  opacity: 0.4;
+  font-size: 1rem;
+  display: none;
 }
 .features img {
   width: 100%;

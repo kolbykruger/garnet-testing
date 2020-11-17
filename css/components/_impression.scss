@@ -32,15 +32,14 @@
     .image {
         position: relative;
         flex: 1;
-        padding: 1em;
 
         &::before {
             content: '';
             position: absolute;
-            top: 3em;
-            left: 3em;
-            right: -1em;
-            bottom: -1em;
+            top: 2.5em;
+            left: 2.5em;
+            width: 100%;
+            height: 100%;
             background: #fff;
             z-index: -1;
             box-shadow: rgba(27, 31, 35, 0.07) 0px 10px 50px 0px;
