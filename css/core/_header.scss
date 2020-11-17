@@ -1,19 +1,33 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $header-height;
+    transition: transform 300ms, background 150ms;
+    z-index: 99;
+
+    &.sticky,
+    &.unsticky {
+        box-shadow: 0px 10px 50px 0px rgba(27, 31, 35, 0.07);
+        background: #fff;
+    }
 
     .container {
         position: relative;
-        max-width: $container-width;
+        max-width: 100%;
         width: 100%;
+        padding: 2em;
     }
 
     .group {
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
     }
 
     .logo {
         width:100%;
-        max-width: 240px;
+        max-width: 260px;
 
         a {
             display: block;

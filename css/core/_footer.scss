@@ -1,10 +1,9 @@
 .footer {
     width: 100%;
-    background: $color-grey-2;
     margin: 1em 0 0;
 
     .container {
-
+        border-top: rgba($color-grey-3, 0.1) 1px solid;
     }
 
     .group {
@@ -65,7 +64,7 @@
         width: 100%;
         margin-top: 3em;
         padding-top: 2em;
-        border-top: 1px solid #ddd;
+        border-top: 1px solid rgba($color-grey-3, 0.1);
     }
 
     .ewd {
