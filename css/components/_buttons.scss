@@ -46,7 +46,7 @@ $button-background: $color-1;
     padding: 1.25em;
     background: $button-background;
     color: $button-color;
-    border-radius: 0.45em;
+    border-radius: 0.65em;
     line-height: 1;
     transition: 150ms ease;
     text-decoration: none;
@@ -93,7 +93,6 @@ $button-background: $color-1;
         color: $button-background;
         border: 2px solid $button-background;
         font-weight: 500;
-        border-radius: 0.85em;
         padding: 1.25em 1.75em;
         min-width: auto;
 
