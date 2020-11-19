@@ -7,4 +7,8 @@
     &-center {
         text-align: center;
     }
+
+    h2 {
+        @include fluid('font-size', 2.5rem, 4rem);
+    }
 }
