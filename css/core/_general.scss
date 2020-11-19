@@ -46,14 +46,16 @@ body {
     padding-top: $header-height;
 
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         right: 0;
-        width: 60vw;
-        height: 100vh;
-        background: $color-grey-1;
+        width: 100vw;
+        height: 86vh;
+        background: #f6f9fc;
+        background: linear-gradient(to right, #fff, #fff 40%, $color-grey-1 40%, $color-grey-1 60%);
         z-index: -1;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     }
 }
 

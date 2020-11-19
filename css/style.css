@@ -561,10 +561,13 @@ body::before {
   position: absolute;
   top: 0;
   right: 0;
-  width: 60vw;
-  height: 100vh;
+  width: 100vw;
+  height: 86vh;
   background: #f6f9fc;
+  background: linear-gradient(to right, #fff, #fff 40%, #f6f9fc 40%, #f6f9fc 60%);
   z-index: -1;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 
 p {
@@ -2098,6 +2101,7 @@ p.simplesearch-results,
 }
 .features {
   margin: 6em auto 0;
+  padding: 6em 0;
 }
 @media (max-width: 768px) {
   .features .group {
@@ -2409,7 +2413,7 @@ table td {
 .services {
   position: relative;
   background: linear-gradient(to bottom, #f6f9fc, transparent);
-  padding: 6em 0;
+  padding: 8em 0;
   -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
           clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
 }
