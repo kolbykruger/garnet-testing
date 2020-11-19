@@ -1,0 +1,24 @@
+.cta {
+
+    .container {
+        background: $color-0;
+        padding: 2em;
+        border-radius: 1em;
+    }
+
+    .group {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    h2,
+    .buttons {
+        width: auto;
+    }
+
+    h2,
+    h3 {
+        color: #fff;
+        margin: 0;
+    }
+}

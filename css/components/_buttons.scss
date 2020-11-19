@@ -81,6 +81,7 @@ $button-background: $color-1;
     &-reverse {
         background: #fff;
         color: $button-background;
+        font-weight: 600;
 
         &:hover,
         &:focus {
@@ -123,7 +124,8 @@ $button-background: $color-1;
 
     &-size-small {
         font-size: 0.875rem;
-        padding: 1em 1.5em;
+        padding: 1.25em 1.5em;
+        min-width: auto;
     }
 
     &[disabled] {

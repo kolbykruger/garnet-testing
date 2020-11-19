@@ -81,7 +81,7 @@ h1 {
 }
 
 h2 {
-    @include fluid('font-size', 1.75rem, 2.5rem);
+    @include fluid('font-size', 1.75rem, 2.75rem);
     //@include fluid('line-height', 1em, 1.2em);
     line-height: 1.2;
     font-weight: 600;
