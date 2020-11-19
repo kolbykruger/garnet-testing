@@ -2141,7 +2141,8 @@ p.simplesearch-results,
 .features .item {
   position: relative;
   text-decoration: none;
-  display: block;
+  display: flex;
+  align-items: flex-end;
   color: inherit;
   position: relative;
   margin: 2em 1em;
@@ -2151,11 +2152,12 @@ p.simplesearch-results,
 }
 .features .item .icon {
   position: relative;
-  font-size: 2rem;
-  margin-bottom: 0.5em;
+  font-size: 2.25rem;
+  margin-right: 0.5em;
 }
 .features .item .title {
   font-weight: 300;
+  margin: 0;
 }
 .features .item .description {
   opacity: 0.4;

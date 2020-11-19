@@ -42,7 +42,8 @@
     .item {
         position: relative;
         text-decoration: none;
-        display: block;
+        display: flex;
+        align-items: flex-end;
         color: inherit;
         position: relative;
         margin: 2em 1em;
@@ -52,12 +53,13 @@
 
         .icon {
             position: relative;
-            font-size: 2rem;
-            margin-bottom: 0.5em;
+            font-size: 2.25rem;
+            margin-right: 0.5em;
         }
 
         .title {
             font-weight: 300;
+            margin: 0;
         }
 
         .description {
